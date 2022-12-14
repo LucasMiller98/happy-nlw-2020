@@ -1,6 +1,8 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
-import { Landing } from '../screens/Landing'
-import { OrphanagesMap } from '../screens/OrphanagesMap'
+import { CreateOrphanage } from '../pages/createOrphanage/CreateOrphanage'
+import { Orphanage } from '../pages/orphanage/Orphanage'
+import { Landing } from '../pages/Landing'
+import { OrphanagesMap } from '../pages/OrphanagesMap'
 
 export function AllRoutes() {
   return(
@@ -8,6 +10,8 @@ export function AllRoutes() {
       <Routes>
         <Route path='/' element={ <Landing /> } />
         <Route path='/app' element={ <OrphanagesMap /> } />
+        <Route path='/orphanage/create' element={ <CreateOrphanage /> } />
+        <Route path='/orphanages/:id' element={ <Orphanage /> } />
       </Routes>
     </BrowserRouter>
   )
