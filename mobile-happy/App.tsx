@@ -4,6 +4,7 @@ import MapView, { PROVIDER_GOOGLE } from 'react-native-maps'
 export default function App() {
   return (
     <View style={styles.container}>
+      <Text>Continua</Text>
       <MapView 
         provider={PROVIDER_GOOGLE}
         style={styles.map} 
